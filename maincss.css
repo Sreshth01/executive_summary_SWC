@@ -1,0 +1,97 @@
+.year {
+    position: absolute;
+    left: 9.16667vw;
+    top: 39.8148vh;
+}
+
+.climatebox {
+    position: absolute;
+    left: 36.25vw;
+    top: 134.074vh;
+}
+
+.climatetxt {
+    position: absolute;
+    left: 42.39583vw;
+    top: 141.4815vh;
+}
+
+.dstt {
+    position: absolute;
+    left: 9.4271vw;
+    top: 10vh;
+}
+
+.execline {
+    position: absolute;
+    left: 7.2396vw;
+    top: 52.87037vh;
+}
+
+.exectxt {
+    position: absolute;
+    left: 9.5833vw;
+    top: 52.4074vh;
+}
+
+.greenbox {
+    position: absolute;
+    left: 27.5vw;
+    top: 118.98148vh;
+    z-index: 10;
+}
+
+.greybox {
+    position: absolute;
+    left: 79.0104vw;
+    top: 55.9259vh;
+}
+
+.iitglogo {
+    position: absolute;
+    left: 62.96875vw;
+    top: 219.25926vh;
+}
+
+.iitmandilogo {
+    position: absolute;
+    left: 38.4375vw;
+    top: 217.5vh;
+}
+
+.map1 {
+    position: absolute;
+    left: 8.5417vw;
+    top: 134.8148vh;
+    z-index: 1;
+}
+
+.map2 {
+    position: absolute;
+    left: 9.16667vw;
+    top: 187.3148vh;
+}
+
+.swiss {
+    position: absolute;
+    left: 71.14583vw;
+    top: 8.5185vh;
+}
+
+.venn {
+    position: absolute;
+    left: 7.8125vw;
+    top: 93.148148vh;
+}
+
+.yellowboxline {
+    position: absolute;
+    left: 36.5104vw;
+    top: 186.11111vh;
+}
+
+.yellowbox {
+    position: absolute;
+    left: 83.3333vw;
+    top: 182.31481vh;
+}

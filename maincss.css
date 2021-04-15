@@ -142,3 +142,18 @@
     left: 81.5333vw;
     top: 182.31481vh;
 }
+
+.planet{
+    top: 256.2963vh;
+    left:41.5vw;
+}
+
+.viewpdf{
+    top: 326.2963vh;
+    left:50vw;
+}
+
+.viewpdf button{
+    top: 326.2963vh;
+    left:46vw;
+}

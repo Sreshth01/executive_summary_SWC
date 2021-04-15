@@ -15,7 +15,6 @@
   position: absolute;
   left: -15.6vw;
   background: #09457b;
-  cursor: pointer;  
   width: 4vw;
   height: 4vw;
   border-radius: 1.5vw;
@@ -46,7 +45,6 @@
   position: absolute;
   left: -27vw;
   background: #09457b;
-  cursor: pointer;  
   width: 4vw;
   height: 4vw;
   border-radius:  1.5vw;
@@ -76,7 +74,6 @@
   position: absolute;
   left:-21.3vw;
   background: #09457b;
-  cursor: pointer;  
   width: 4vw;
   height: 4vw;
   border-radius:  1.5vw;
@@ -106,8 +103,7 @@
 .stepper3 {
   position: absolute;
   left: -32.5vw;
-  background: #09457b;
-  cursor: pointer;  
+  background: #09457b; 
   width: 4vw;
   height: 4vw;
   border-radius:  1.5vw;

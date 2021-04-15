@@ -7,9 +7,7 @@
   font-weight: 700;
   color: #231f20;
   font-size: 20px;
-  position: absolute;
-  top:256vh;
-  left:50vw;
+  position: relative;
   overflow: hidden;
   white-space: nowrap;
 }

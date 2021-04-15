@@ -1,8 +1,5 @@
-html, body {
-  height: 100%;
-  width: 100%;
-}
-body {
+
+.wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,16 +7,15 @@ body {
   font-weight: 700;
   color: #231f20;
   font-size: 20px;
-  background: #fff3f5;
-}
-.wrap {
   position: relative;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .stepper {
-  top: 0vh;
-  left: 10vw;
+  position: absolute;
+  left: 50vw;
   background: #ff4957;
-  cursor: pointer;
+  cursor: pointer;  
   width: 130px;
   height: 130px;
   border-radius: 40px;
@@ -48,8 +44,8 @@ body {
 }
 
 .stepper2 {
-  top: 0vh;
-  left: -10vw;
+  position: absolute;
+  left: 30vw;
   background: #ff4957;
   cursor: pointer;
   width: 130px;
@@ -80,8 +76,8 @@ body {
 }
 
 .stepper1 {
-  top: 0vh;
-  left: 0vw;
+  position: absolute;
+  left: -1vw;
   background: #ff4957;
   cursor: pointer;
   width: 130px;
@@ -113,8 +109,8 @@ body {
 
 
 .stepper3 {
-  top: -17vh;
-  left: -20vw;
+  position: absolute;
+  left: -30vw;
   background: #ff4957;
   cursor: pointer;
   width: 130px;

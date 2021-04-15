@@ -1,0 +1,41 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1e2021;
+}
+
+button {
+    position: relative;
+    background: linear-gradient(277deg, rgba(213, 213, 213, 0.1) 0%, rgba(213, 213, 213, 0.02) 50%, rgba(42, 42, 42, 0.02) 50%, rgba(42, 42, 42, 0.2) 100%), linear-gradient(295deg, rgba(73, 73, 73, 0.3) 0%, rgba(73, 73, 73, 0.1) 50%, rgba(229, 229, 229, 0.1) 50%, rgba(229, 229, 229, 0.03) 100%), linear-gradient(145deg, rgba(77, 77, 77, 0.1) 0%, rgba(77, 77, 77, 0.1) 50%, rgba(123, 123, 123, 0.1) 50%, rgba(123, 123, 123, 0.1) 100%), linear-gradient(54deg, rgba(51, 51, 51, 0.3) 0%, rgba(51, 51, 51, 0.1) 50%, rgba(29, 29, 29, 0.2) 50%, rgba(29, 29, 29, 0.03) 100%), linear-gradient(170deg, rgba(9, 9, 9, 0.02) 0%, rgba(9, 9, 9, 0.02) 50%, rgba(243, 243, 243, 0.02) 50%, rgba(243, 243, 243, 0.02) 100%), linear-gradient(264deg, rgba(214, 214, 214, 0.01) 0%, rgba(214, 214, 214, 0.01) 50%, rgba(153, 153, 153, 0.01) 50%, rgba(153, 153, 153, 0.01) 100%), linear-gradient(90deg, #6330de, #4cd4e9);
+    padding: 1em 1.5em;
+    border: 1px solid black;
+    border-radius: 25px 7px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: all 0.7s ease;
+}
+
+button:after {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background: linear-gradient(45deg, #2e5e95, #3b83d1, #435b8e);
+    width: 150px;
+    height: 30px;
+    content: '';
+    transform: translate(-50%);
+    border-radius: 25px 7px;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+button:hover {
+    border-radius: 7px 25px;
+    background: linear-gradient(45deg, #ef0781 0%, #ef0781 6%, #d00a70 6%, #d00a70 25%, #b10d60 25%, #b10d60 40%, #93104f 40%, #93104f 45%, #74133e 45%, #74133e 53%, #55162e 53%, #55162e 66%, #36191d 66%, #36191d 100%);
+    letter-spacing: 0.2em;
+    border: 1px solid white;
+}

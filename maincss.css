@@ -1,151 +1,397 @@
-
-
-.body{
-    background-color: white;
-}
-
-.year {
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .post {
     position: absolute;
-    left: 9.16667vw;
-    top: 39.8148vh;
-}
-
-.climatebox {
+    bottom: 20px;
+    left: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+  }
+  
+  .post__link {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .planet {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    position: relative;
+  }
+  
+  .path-wrapper {
     position: absolute;
-    left: 36.25vw;
-    top: 134.074vh;
-}
-
-.climatetxt {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+  }
+  
+  .outline {
+    fill: transparent;
+    stroke: #4d3034;
+    fill: #65a4b7;
+    stroke-width: 2;
+    position: relative;
+    z-index: 5;
+  }
+  
+  
+  /* ----- */
+  /* Cloud */
+  /* ----- */
+  
+  .cloud-boundary {
+    width: 100px;
+    height: 270px;
     position: absolute;
-    left: 42.39583vw;
-    top: 141.4815vh;
-}
-
-.dstt {
+    top: calc(-50% - 30px);
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom center;
+    z-index: -2;
+    will-change: auto;
+  }
+  
+  .cloud-boundary__marker {
     position: absolute;
-    left: 9.4271vw;
-    top: 10vh;
-}
-
-.dstt img{
-    width:20.71825vw;
-    height:20.46296vh;
-    object-fit:contain;
-}
-
-.execline {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+  }
+  
+  .cloud {
+    width: 100%;
+    height: 50px;
     position: absolute;
-    left: 7.2396vw;
-    top: 52.87037vh;
-}
-
-.exectxt {
+    top: 0;
+    left: 0;
+  }
+  
+  .cloud-svg {
+    fill: #ffffff;
+  }
+  
+  
+  
+  /* ---- */
+  /* Rain */
+  /* ---- */
+  
+  .rain {
+    width: calc(100% - 20px);
+    height: 100%;
     position: absolute;
-    left: 9.5833vw;
-    top: 52.4074vh;
-}
-
-.greenbox {
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  
+  .rain--active {
+    opacity: 0.6;
+  }
+  
+  .rain__drops-top {
+    height: 100%;
+    width: 100%;
     position: absolute;
-    left: 27.5vw;
-    top: 118.98148vh;
+    left: 0;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/rain.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+  
+  .rain__drops-bottom {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/rain.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+    opacity: 1;
+  }
+  
+  
+  
+  /* ---- */
+  /* Bike */
+  /* ---- */
+  
+  .bike {
+    position: absolute;
+    top: -40px;
+    left: -20px;
+    width: 40px;
+    height: 80px;
+    z-index: -2;
+    transform: rotate(0);
+    will-change: auto;
+  }
+  
+  .bike__marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+  }
+  
+  #bm {
+    position: relative;
+  }
+  
+  .bike svg {
+    z-index: 20;
+    position: relative;
+    will-change: auto;
+  }
+  
+  .umbrella-animation {
+    position: absolute;
+    top: -12px;
+    left: calc(50% + 2px);
+    transform: translateX(-50%);
+    width: 100%;
     z-index: 10;
-}
-
-.greybox {
+  }
+  
+  .light {
     position: absolute;
-    left: 79.0104vw;
-    top: 55.9259vh;
-}
-
-.iitglogo {
+    top: 18px;
+    left: 30px;
+    width: 0;
+    z-index: 10;
+    height: 10px;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/light.png) 0 0 no-repeat;
+    background-size: 22px 10px;
+    transition: width 0s 0.3s, opacity 0.3s;
+    transform-origin: center left;
+    opacity: 0;
+  }
+  
+  .light--active {
+    width: 22px;
+    transition: width 0.2s, opacity 0s;
+    opacity: 0.6;
+  }
+  
+  
+  
+  /* ------- */
+  /* Scenery */
+  /* ------- */
+  
+  .tree-01 {
+    width: 40px;
     position: absolute;
-    left: 62.96875vw;
-    top: 219.25926vh;
-}
-
-.iitmandilogo {
+    top: 5px;
+    left: -5px;
+    transform: rotate(-41deg);
+    z-index: -3;
+    fill: #1f6219;
+  }
+  
+  .tree-02 {
+    width: 30px;
     position: absolute;
-    left: 38.4375vw;
-    top: 217.5vh;
-}
-
-.iisc{
+    top: 6px;
+    left: 16px;
+    transform: rotate(-41deg);
+    z-index: -1;
+    fill: #1a5215;
+  }
+  
+  .tree-03 {
+    width: 40px;
     position: absolute;
-    left: 82.9167vw;
-    top: 219.4444vh;
-}
-
-.iisc img{
-    width:9.5833vw;
-    height:13.8889vh;
-    object-fit: contain;
-}
-
-.grouping{
+    top: 225px;
+    left: 75px;
+    transform: rotate(-161deg);
+    z-index: -3;
+    fill: #1f6219;
+  }
+  
+  .tree-04 {
+    width: 30px;
     position: absolute;
-    left: 36.25vw;
-    top: 82.222vh;
-}
-.grouping img{
-    width:56.61458333vw;
-    height:49.90740741vh;
-    object-fit:contain;
-}
-.map1 {
+    top: 225px;
+    left: 98px;
+    transform: rotate(-169deg);
+    z-index: -1;
+    fill: #1a5215;
+  }
+  
+  .tree-05 {
+    width: 30px;
     position: absolute;
-    left: 8.5417vw;
-    top: 134.8148vh;
-    width : 26.0417vw;
-    height : 49.074074vw;
-}
-
-.map2 {
+    top: 24px;
+    left: 225px;
+    transform: rotate(-304deg);
+    z-index: -1;
+    fill: #1a5215;
+  }
+  
+  .mountain-1 {
+    fill: #97b45c;
     position: absolute;
-    left: 9.16667vw;
-    top: 187.3148vh;
-    max-width: 457px;
-    height: auto;
-}
-
-.map1 img{
-    width:26.04167vw;
-    height:27.573125vw;
-    object-fit:contain;
-}
-
-.map2 img{
-    width:23.802083vw;
-    height:27.0104167vw;
-    object-fit:contain;
-}
-
-.swiss {
+    top: -18px;
+    left: 80px;
+    transform: rotate(40deg);
+    width: 60px;
+    z-index: -5;
+  }
+  
+  .mountain-2 {
+    fill: #97b45c;
     position: absolute;
-    left: 71.14583vw;
-    top: 8.5185vh;
-}
-
-.venn {
+    top: -5px;
+    left: 119px;
+    transform: rotate(56deg);
+    width: 60px;
+    z-index: -5;
+  }
+  
+  .mountain-4 {
+    fill: #97b45c;
+  position: absolute;
+  top: 156px;
+  left: 182px;
+  transform: rotate(77deg);
+  width: 60px;
+  z-index: -5;
+  }
+  
+  .mountain-5 {
+    fill: #97b45c;
     position: absolute;
-    left: 7.8125vw;
-    top: 93.148148vh;
-}
-
-.yellowboxline {
+    top: 180px;
+    left: 159px;
+    transform: rotate(10deg);
+    width: 60px;
+    z-index: -5;
+  }
+  
+  .rock-1 {
     position: absolute;
-    left: 36.5104vw;
-    top: 186.11111vh;
-}
-
-.yellowbox {
+  top: 127px;
+  left: -8px;
+  width: 20px;
+  transform: rotate(-90deg);
+  z-index: -1;
+  fill: #6a6a6a;
+  }
+  
+  .rock-2 {
     position: absolute;
-    left: 81.5333vw;
-    top: 182.31481vh;
-}
-
-.viewpdf button{
-    top: 280vh;
-    left:46vw;
-}
+    top: 199px;
+    left: 198px;
+    width: 20px;
+    transform: rotate(-206deg);
+    z-index: -1;
+    fill: #6a6a6a;
+  }
+  
+  .rotating-fog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: rgb(1, 15, 24);
+    opacity: 0.09;
+    width: 92%;
+    height: 92%;
+    animation: spin;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: -10;
+  }
+  
+  @keyframes spin {
+    0% {transform: translate(-50%, -50%) rotate(360deg);}
+    100% {transform: translate(-50%, -50%) rotate(0deg);}
+  }
+  
+  .grass-1 {
+    position: absolute;
+    top: 100px;
+    left: -4px;
+    transform: rotate(-86deg);
+    width: 10px;
+    height: 20px;
+    fill: #4d3034;
+    z-index: -10;
+  }
+  
+  .grass-2 {
+    position: absolute;
+    top: 209px;
+    left: 46px;
+    transform: rotate(-156deg);
+    width: 10px;
+    height: 20px;
+    fill: #4d3034;
+    z-index: -10;
+  }
+  
+  .grass-3 {
+    position: absolute;
+    top: 109px;
+    left: 235px;
+    transform: rotate(-266deg);
+    width: 10px;
+    height: 20px;
+    fill: #4d3034;
+    z-index: -10;
+  }
+  
+  
+  /* ------------ */
+  /* Instructions */
+  /* ------------ */
+  
+  .instructions {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+  
+  .instructions__item {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    padding: 4px 10px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .instructions__item:first-child {
+    margin-top: 0;
+  }
+  

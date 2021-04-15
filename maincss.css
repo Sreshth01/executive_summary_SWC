@@ -22,6 +22,12 @@
     top: 10vh;
 }
 
+.dstt img{
+    width:20.71825vw;
+    height:20.46296vh;
+    object-fit:contain;
+}
+
 .execline {
     position: absolute;
     left: 7.2396vw;
@@ -59,17 +65,54 @@
     top: 217.5vh;
 }
 
+.iisc{
+    position: absolute;
+    left: 82.9167vw;
+    top: 219.4444vh;
+}
+
+.iisc img{
+    width:9.5833vw;
+    height:13.8889vh;
+    object-fit: contain;
+}
+
+.groupimg{
+    position: absolute;
+    left: 36.25vw;
+    top: 82.222vh;
+}
+.groupimg img{
+    width:56.61458333vw;
+    height:49.90740741vh;
+    object-fit:contain;
+}
 .map1 {
     position: absolute;
     left: 8.5417vw;
     top: 134.8148vh;
-    z-index: 1;
+    width : 26.0417vw;
+    height : 49.074074vw;
 }
 
 .map2 {
     position: absolute;
     left: 9.16667vw;
     top: 187.3148vh;
+    max-width: 457px;
+    height: auto;
+}
+
+.map1 img{
+    width:26.04167vw;
+    height:27.573125vw;
+    object-fit:contain;
+}
+
+.map2 img{
+    width:23.802083vw;
+    height:27.0104167vw;
+    object-fit:contain;
 }
 
 .swiss {
@@ -92,6 +135,6 @@
 
 .yellowbox {
     position: absolute;
-    left: 83.3333vw;
+    left: 81.5333vw;
     top: 182.31481vh;
 }

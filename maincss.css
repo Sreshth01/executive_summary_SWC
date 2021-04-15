@@ -1,3 +1,5 @@
+
+
 .year {
     position: absolute;
     left: 9.16667vw;
@@ -77,12 +79,12 @@
     object-fit: contain;
 }
 
-.groupimg{
+.grouping{
     position: absolute;
     left: 36.25vw;
     top: 82.222vh;
 }
-.groupimg img{
+.grouping img{
     width:56.61458333vw;
     height:49.90740741vh;
     object-fit:contain;

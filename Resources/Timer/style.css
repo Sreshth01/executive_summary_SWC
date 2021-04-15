@@ -10,12 +10,12 @@
   position: relative;
   overflow: hidden;
   white-space: nowrap;
-  top:250vh;
+  top:0vh;
   --value : 7vw;
 }
 .stepper {
   position: absolute;
-  left: calc(50vw + var(--value));
+  /* left: calc(50vw + var(--value)); */
   background: #ff4957;
   cursor: pointer;  
   width: 6.77vw;
@@ -46,7 +46,7 @@
 
 .stepper2 {
   position: absolute;
-  left: calc(34.8vw + var(--value));
+  /*left: calc(34.8vw + var(--value));*/
   background: #ff4957;
   cursor: pointer;
   width: 6.77vw;
@@ -77,7 +77,7 @@
 
 .stepper1 {
   position: absolute;
-  left : var(--value);
+  /*left : var(--value);*/
   background: #ff4957;
   cursor: pointer;
   width: 6.77vw;
@@ -109,7 +109,7 @@
 
 .stepper3 {
   position: absolute;
-  left: calc(-22vw + var(--value));
+  /*left: calc(-22vw + var(--value));*/
   background: #ff4957;
   cursor: pointer;
   width: 6.77vw;

@@ -1,13 +1,6 @@
-<<<<<<< HEAD
-window.onbeforeunload=function(){
-    window.scrollTo(0,0);
-}
-=======
-
 window.onbeforeunload = function () {
     window.scrollTo(0,0);
 };
->>>>>>> 02727031d5f59405a169c6625d7ee28f1c93fdf6
 document.body.style.overflow = "hidden";
 
 function load()

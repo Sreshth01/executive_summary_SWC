@@ -6,34 +6,32 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #231f20;
-  font-size: 20px;
+  font-size: 1.852vh;
   position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  top:0vh;
+  top:32.6vh;
   --value : 7vw;
 }
 .stepper {
   position: absolute;
-  /* left: calc(50vw + var(--value)); */
-  background: #ff4957;
+  left: -15.6vw;
+  background: #09457b;
   cursor: pointer;  
-  width: 6.77vw;
-  height: 6.77vw;
-  border-radius: 0.781vw;
+  width: 4vw;
+  height: 4vw;
+  border-radius: 1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 64px;
+  font-size: 4vh;
   position: absolute;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1000000;
 }
 .stepper span {
   user-select: none;
   position: absolute;
-  top: 28px;
+  top: 1vw;
   left: 50%;
   transform: translateY(0) translateX(-50%);
 }
@@ -46,25 +44,24 @@
 
 .stepper2 {
   position: absolute;
-  /*left: calc(34.8vw + var(--value));*/
-  background: #ff4957;
-  cursor: pointer;
-  width: 6.77vw;
-  height:6.77vw;
-  border-radius: 0.781vw;
+  left: -27vw;
+  background: #09457b;
+  cursor: pointer;  
+  width: 4vw;
+  height: 4vw;
+  border-radius:  1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 64px;
-  position:absolute;
+  font-size: 4vh;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1000000;
 }
 .stepper2 span {
   user-select: none;
   position: absolute;
-  top: 28px;
+  top: 1vw;
   left: 50%;
   transform: translateY(0) translateX(-50%);
 }
@@ -77,25 +74,24 @@
 
 .stepper1 {
   position: absolute;
-  /*left : var(--value);*/
-  background: #ff4957;
-  cursor: pointer;
-  width: 6.77vw;
-  height: 6.77vw;
-  border-radius: 0.781vw;
+  left:-21.3vw;
+  background: #09457b;
+  cursor: pointer;  
+  width: 4vw;
+  height: 4vw;
+  border-radius:  1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 64px;
-  position: relative;
+  font-size: 4vh;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1000000;
 }
 .stepper1 span {
   user-select: none;
   position: absolute;
-  top: 28px;
+  top: 1vw;
   left: 50%;
   transform: translateY(0) translateX(-50%);
 }
@@ -109,26 +105,24 @@
 
 .stepper3 {
   position: absolute;
-  /*left: calc(-22vw + var(--value));*/
-  background: #ff4957;
-  cursor: pointer;
-  width: 6.77vw;
-  height: 6.77vw;
-  border-radius: 0.781vw;
+  left: -32.5vw;
+  background: #09457b;
+  cursor: pointer;  
+  width: 4vw;
+  height: 4vw;
+  border-radius:  1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
-  font-size: 64px;
-  position: relative;
-
+  font-size: 4vh;
   overflow: hidden;
-  z-index: 2;
+  z-index: 1000000;
 }
 .stepper3 span {
   user-select: none;
   position: absolute;
-  top: 28px;
+  top: 1vw;
   left: 50%;
   transform: translateY(0) translateX(-50%);
 }

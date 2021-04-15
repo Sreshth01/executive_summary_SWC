@@ -185,6 +185,7 @@ const step = function() {
 };
 
 
+
 setInterval(() => {
   right = true;
   setTimeout(() => {
@@ -195,9 +196,7 @@ setInterval(() => {
 }, 4800);
 
 
-setInterval(() => {
-  space = !space;
-}, 4800)
+
 
 
 

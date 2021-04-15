@@ -16,7 +16,7 @@ var count3 = parseInt($('.stepper3').text());
 
 
 //handle dates
-var countDownDate = new Date("Jul 25, 2021 16:37:52").getTime();
+var countDownDate = new Date("Apr 17, 2021 12:00:00").getTime();
 function myfunc() {
   
   var now = new Date().getTime();

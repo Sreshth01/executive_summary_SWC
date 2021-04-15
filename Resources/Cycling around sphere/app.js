@@ -70,9 +70,9 @@ let cloudBoundaryAngle = 0;
 let cloudBoundaryVelocity = 0;
 let left = false;
 let right = false;
-let lastDirection = '';
+let lastDirection = 'right';
 
-document.addEventListener('keydown', (e) => {
+/*document.addEventListener('keydown', (e) => {
   if(e.keyCode === 37) {
     left = true;
     lastDirection = 'left';
@@ -92,7 +92,9 @@ document.addEventListener('keyup', (e) => {
   } else if (e.keyCode === 32) {
     space = false;
   }
-});
+});*/
+
+
 
 
 
@@ -104,7 +106,7 @@ const step = function() {
 
   if(left || right) {
     if (cloudBoundaryVelocity < 2) {
-      cloudBoundaryVelocity += 0.2;
+      cloudBoundaryVelocity += 0.21;
     }
   }
 
@@ -117,7 +119,7 @@ const step = function() {
       cloudBoundaryAngle += cloudBoundaryVelocity;
     }
 
-    cloudBoundaryVelocity -= 0.05;
+    cloudBoundaryVelocity = 0.95*cloudBoundaryVelocity;
   } else {
     cloudBoundaryVelocity = 0;
   }
@@ -180,5 +182,22 @@ const step = function() {
 
   window.requestAnimationFrame(step);
 };
+
+
+setInterval(() => {
+  right = true;
+  setTimeout(() => {
+    right = false;
+  },1000);
+
+  console.log(cloudBoundaryVelocity)  ;
+}, 4800);
+
+
+setInterval(() => {
+  space = !space;
+}, 4800)
+
+
 
 window.requestAnimationFrame(step);

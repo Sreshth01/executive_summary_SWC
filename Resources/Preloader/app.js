@@ -58,7 +58,7 @@ var circle1 = anime ({
   elasticity: 400,
 		easing: 'easeInOutElastic',
 	 duration: 1000,
-		delay: 400,
+		delay: 150,
 });
 
 var circle2 = anime ({
@@ -69,7 +69,7 @@ var circle2 = anime ({
   elasticity: 400,
 		easing: 'easeInOutElastic',
 	 duration: 1000,
-		delay: 400,
+		delay: 150,
 });
 
 var circle3 = anime ({
@@ -80,7 +80,7 @@ var circle3 = anime ({
   elasticity: 400,
 		easing: 'easeInOutElastic',
 	 duration: 1000,
-		delay: 400,
+		delay: 150,
 });
 
 var circle4 = anime ({
@@ -92,7 +92,7 @@ var circle4 = anime ({
   elasticity: 400,
 		easing: 'easeInOutElastic',
 	 duration: 1000,
-		delay: 400,
+		delay: 150,
 });
 
 
@@ -124,7 +124,7 @@ setTimeout(function(){
     duration:1000,
     easing: 'easeOutQuad'
   });  
-  setTimeout(function(){trans();},600);
+  setTimeout(function(){trans();},100);
 
 
-},5000);
+},4400);

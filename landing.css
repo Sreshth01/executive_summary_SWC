@@ -12,10 +12,11 @@
 body{
     color: var(--txtmain);
     background-image: url("Resources/images/landingbg.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0px;
-    padding: 0px;
-    overflow-y: hidden; 
+    padding: 0px; 
+    overflow: hidden;
 }
 
 .swc{
@@ -29,3 +30,15 @@ body{
     width : 3vw;
     height : 1.194vh;
 }
+
+
+.timer{
+    position: relative;
+    top:30vh;
+    left:19vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #050c30;
+    font-size: 30px;
+}
+

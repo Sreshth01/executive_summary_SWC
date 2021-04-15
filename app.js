@@ -95,6 +95,7 @@ document.addEventListener('keyup', (e) => {
 });*/
 
 
+let speedratio = 1536/window.innerWidth;
 
 
 
@@ -106,7 +107,7 @@ const step = function() {
 
   if(left || right) {
     if (cloudBoundaryVelocity < 2) {
-      cloudBoundaryVelocity += 0.21;
+      cloudBoundaryVelocity += 0.21*speedratio;
     }
   }
 
@@ -130,7 +131,7 @@ const step = function() {
 
   let distanceFromCloud = detectCollision(bikeMarker.getBoundingClientRect(), cloudBoundaryMarker.getBoundingClientRect());
 
-  if (distanceFromCloud < 60) {
+  if (distanceFromCloud < 60*speedratio) {
     light.classList.add('light--active');
   } else {
     if (light.classList.contains('light--active')) {
@@ -138,7 +139,7 @@ const step = function() {
     }
   }
 
-  if (distanceFromCloud < 80 && space) {
+  if (distanceFromCloud < 80*speedratio && space) {
     if(!bmContainer.classList.contains('active')) {
       bmContainer.classList.add('active');
       umbrella.setDirection(1);

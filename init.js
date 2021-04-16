@@ -1,3 +1,5 @@
+
+document.body.style.overflow = "";
 window.onbeforeunload = function () {
     window.scrollTo(0,0);
 };

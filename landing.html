@@ -162,6 +162,9 @@
         
         function scrooll()
         {
+
+          
+          document.getElementById("myButton1").disabled = true;
           setTimeout(() => {
               document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp5&nbsp&nbsp&nbsp&nbsp&nbsp";
           }, 200);
@@ -183,6 +186,7 @@
             document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp&nbsp&nbsp";
             window.scrollTo(0,"100vh");
             }, 5200);
+
         }
         </script>
 

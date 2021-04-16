@@ -152,18 +152,37 @@
             </a>
         </div>
 
-        <div class="button">
-        <a onclick="scrooll()">
-          <button>Raise Curtain</button>
+        <div class="buttom">
+        <a >
+          <button id="myButton1" onclick="scrooll()">Raise Curtain</button>
         </a>
 
         <script>
+        
+        
         function scrooll()
         {
-          
-          document.body.style.overflow = "";
-          window.scrollTo(0,"100vh");
+          setTimeout(() => {
+              document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp5&nbsp&nbsp&nbsp&nbsp&nbsp";
+          }, 200);
+          setTimeout(() => {
+            document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp4&nbsp&nbsp&nbsp&nbsp&nbsp";
+          }, 1200);
+          setTimeout(() => {
+            document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp3&nbsp&nbsp&nbsp&nbsp&nbsp";
+          }, 2200);
+          setTimeout(() => {
+            document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp2&nbsp&nbsp&nbsp&nbsp&nbsp";
+          }, 3200);
+          setTimeout(() => {
+            document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp1&nbsp&nbsp&nbsp&nbsp&nbsp";
+          },4200);
 
+          setTimeout(() => {
+            document.body.style.overflow = "";
+            document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp&nbsp&nbsp";
+            window.scrollTo(0,"100vh");
+            }, 5200);
         }
         </script>
 

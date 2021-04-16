@@ -322,7 +322,7 @@
           setTimeout(() => {
             document.body.style.overflow = "";
             document.getElementById("myButton1").innerHTML = "&nbsp&nbsp&nbsp&nbsp&nbsp0&nbsp&nbsp&nbsp&nbsp&nbsp";
-            window.scrollTo(0,"100vh");
+            smoothScroll(document.getElementById('second'));
             }, 5200);
 
         }
@@ -330,7 +330,7 @@
 
         </div>
 
-        <div class="rxWorld">
+        <div class="rxWorld" id = 'second'>
 
           <section class="rnOuter ">
   
@@ -410,3 +410,5 @@
 <script src = "Resources/Timer/app.js"></script>
 <script src="app.js"></script>
 <script src="Resources/Preloader/preloader.js"></script>
+
+<script src="scrolling.js"></script>

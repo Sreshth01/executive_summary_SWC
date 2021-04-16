@@ -32,7 +32,7 @@
 
 body {
     color: var(--txtmain);
-    overflow-x: hidden;
+    overflow:hidden;
     background-color: white;
 }
 

@@ -156,7 +156,4 @@ setTimeout(()=>{
     load();
 },6000);
 
-setTimeout(()=>{
-    document.body.style.overflow = "";
-    window.scrollTo(0,0);
-},7000);
+

@@ -6,15 +6,14 @@ html {
   height: 100%;
 }
 
-body {
+ body {
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-}
-
+} 
 .post {
   position: absolute;
   bottom: 20px;
@@ -29,12 +28,13 @@ body {
 }
 
 .planet {
-  top:-13vh;
-  left:33vw;
+  top:20vh;
+  right: -33vw;
   width: 300px;
   height: 300px;
   border-radius: 100%;
   position: relative;
+
 }
 
 .path-wrapper {
@@ -47,8 +47,8 @@ body {
 
 .outline {
   fill: transparent;
-  stroke: #4d3034;
-  fill: #65a4b7;
+  stroke: #00305A;
+  fill:#5FAFF8;
   stroke-width: 2;
   position: relative;
   z-index: 5;
@@ -320,7 +320,7 @@ fill: #6a6a6a;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: rgb(1, 15, 24);
+  fill: #E5E5E5;
   opacity: 0.09;
   width: 92%;
   height: 92%;

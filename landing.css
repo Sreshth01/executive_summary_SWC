@@ -9,20 +9,36 @@
     --cardbg :#D0D0D0;
 }
 
+
+.bg1{
+    margin-left: 0;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    position: absolute;
+}
+
+.bg1 img{
+    margin-left: 0;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    position: absolute;
+    max-height: 100vh;
+}
+
 body{
     color: var(--txtmain);
-    background-image: url("Resources/images/landingbg.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin: 0px;
-    padding: 0px; 
-    overflow: hidden;
+    overflow-x: hidden;
+    background-color: white;
 }
 
 .swc{
     position:absolute;
     left :13.875vw;
-    top:95.19259vh;
+    bottom:0.8vh;
     
 }
 
@@ -41,4 +57,12 @@ body{
     color: #050c30;
     font-size: 30px;
 }
-
+.grid{
+    display : grid; 
+    grid-template-columns:repeat(auto-fill, 40vw));
+    gap :5vw;
+    grid-template-rows: 100vh;
+    width: 100%;
+    left: 0px;
+}
+}

@@ -5,6 +5,7 @@
   height: 300px;
   border-radius: 100%;
   position: relative;
+  --index: 100;
 }
 
 .path-wrapper {
@@ -12,7 +13,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 50;
+  z-index: calc(50+var(--index));
 }
 
 .outline {
@@ -21,7 +22,7 @@
   fill: #65a4b7;
   stroke-width: 2;
   position: relative;
-  z-index: 5;
+  z-index: calc(5+var(--index));
 }
 
 
@@ -37,7 +38,7 @@
   left: 50%;
   transform: translateX(-50%);
   transform-origin: bottom center;
-  z-index: -2;
+  z-index: calc(-2+var(--index));
   will-change: auto;
 }
 
@@ -48,6 +49,7 @@
   transform: translate(-50%, -50%);
   width: 1px;
   height: 1px;
+  z-index: var(--index);
 }
 
 .cloud {
@@ -56,6 +58,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: var(--index);
 }
 
 .cloud-svg {
@@ -116,7 +119,7 @@
   left: -20px;
   width: 40px;
   height: 80px;
-  z-index: -2;
+  z-index: calc(-2+var(--index));
   transform: rotate(0);
   will-change: auto;
 }
@@ -128,16 +131,19 @@
   transform: translate(-50%, -50%);
   width: 1px;
   height: 1px;
+  z-index: var(--index);
 }
 
 #bm {
   position: relative;
+  z-index: calc(0+var(--index));
 }
 
 .bike svg {
   z-index: 20;
   position: relative;
   will-change: auto;
+  z-index: calc(0+var(--index));
 }
 
 .umbrella-animation {
@@ -146,7 +152,7 @@
   left: calc(50% + 2px);
   transform: translateX(-50%);
   width: 100%;
-  z-index: 10;
+  z-index: calc(10+var(--index));
 }
 
 .light {
@@ -154,7 +160,7 @@
   top: 18px;
   left: 30px;
   width: 0;
-  z-index: 10;
+  z-index: calc(10+var(--index));
   height: 10px;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/49240/light.png) 0 0 no-repeat;
   background-size: 22px 10px;
@@ -167,6 +173,7 @@
   width: 22px;
   transition: width 0.2s, opacity 0s;
   opacity: 0.6;
+  z-index: calc(0+var(--index));
 }
 
 
@@ -181,7 +188,7 @@
   top: 5px;
   left: -5px;
   transform: rotate(-41deg);
-  z-index: -3;
+  z-index: calc(-3+var(--index));
   fill: #1f6219;
 }
 
@@ -191,7 +198,7 @@
   top: 6px;
   left: 16px;
   transform: rotate(-41deg);
-  z-index: -1;
+  z-index: calc(-1+var(--index));
   fill: #1a5215;
 }
 
@@ -201,7 +208,7 @@
   top: 225px;
   left: 75px;
   transform: rotate(-161deg);
-  z-index: -3;
+  z-index: calc(-3+var(--index));
   fill: #1f6219;
 }
 
@@ -211,7 +218,7 @@
   top: 225px;
   left: 98px;
   transform: rotate(-169deg);
-  z-index: -1;
+  z-index: calc(-1+var(--index));
   fill: #1a5215;
 }
 
@@ -221,7 +228,7 @@
   top: 24px;
   left: 225px;
   transform: rotate(-304deg);
-  z-index: -1;
+  z-index: calc(-1+var(--index));
   fill: #1a5215;
 }
 
@@ -232,7 +239,7 @@
   left: 80px;
   transform: rotate(40deg);
   width: 60px;
-  z-index: -5;
+  z-index: calc(-5+var(--index));
 }
 
 .mountain-2 {
@@ -242,7 +249,7 @@
   left: 119px;
   transform: rotate(56deg);
   width: 60px;
-  z-index: -5;
+  z-index: calc(-5+var(--index));
 }
 
 .mountain-4 {
@@ -252,7 +259,7 @@ top: 156px;
 left: 182px;
 transform: rotate(77deg);
 width: 60px;
-z-index: -5;
+z-index: calc(-5+var(--index));
 }
 
 .mountain-5 {
@@ -262,7 +269,7 @@ z-index: -5;
   left: 159px;
   transform: rotate(10deg);
   width: 60px;
-  z-index: -5;
+  z-index: calc(-5+var(--index));
 }
 
 .rock-1 {
@@ -271,7 +278,7 @@ top: 127px;
 left: -8px;
 width: 20px;
 transform: rotate(-90deg);
-z-index: -1;
+z-index: calc(-1+var(--index));
 fill: #6a6a6a;
 }
 
@@ -281,7 +288,7 @@ fill: #6a6a6a;
   left: 198px;
   width: 20px;
   transform: rotate(-206deg);
-  z-index: -1;
+  z-index: calc(-1+var(--index));
   fill: #6a6a6a;
 }
 
@@ -298,7 +305,7 @@ fill: #6a6a6a;
   animation-duration: 40s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  z-index: -10;
+  z-index: calc(-10+var(--index));
 }
 
 @keyframes spin {
@@ -314,7 +321,7 @@ fill: #6a6a6a;
   width: 10px;
   height: 20px;
   fill: #4d3034;
-  z-index: -10;
+  z-index: calc(-10+var(--index));
 }
 
 .grass-2 {
@@ -325,7 +332,7 @@ fill: #6a6a6a;
   width: 10px;
   height: 20px;
   fill: #4d3034;
-  z-index: -10;
+  z-index: calc(-10+var(--index));
 }
 
 .grass-3 {
@@ -336,7 +343,7 @@ fill: #6a6a6a;
   width: 10px;
   height: 20px;
   fill: #4d3034;
-  z-index: -10;
+  z-index: calc(-10+var(--index));
 }
 
 
